@@ -767,7 +767,7 @@
         // ใส่ URL ที่ได้จากขั้นตอนการ Deploy Google Apps Script ลงไปตรงนี้
         const GAS_URL = 'https://script.google.com/macros/s/AKfycbwjjE9JvevxfEXW5aMWvYexeZBeGZ5lKmxkSr7WwM-cnYlLf8skFXiXQqhPslQhwpY/exec'; 
         const GEMINI_API_KEY = 'AIzaSyC0EXUlAj-lIFTRiFPTNJeidgXlcG03B8U'; // จาก Prompt
-        const GEMINI_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-lite:generateContent?key=${GEMINI_API_KEY}`;
+        const url = 'https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash:generateContent?key=' + GEMINI_API_KEY;
         
         // --- State Management ---
         let globalData = [];
